@@ -1,0 +1,32 @@
+{
+  "name": "stylesheet-inject",
+  "version": "0.0.1",
+  "description": "Dynamically load CSS snippets and stylesheets at runtime in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdcrensh/stylesheet-inject.git"
+  },
+  "keywords": [
+    "javscript",
+    "js",
+    "css",
+    "style",
+    "stylesheet",
+    "inject",
+    "load",
+    "loading",
+    "loader",
+    "dynamic",
+    "browser"
+  ],
+  "author": "jdcrensh@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdcrensh/stylesheet-inject/issues"
+  },
+  "homepage": "https://github.com/jdcrensh/stylesheet-inject#readme"
+}
