@@ -1,9 +1,10 @@
-var webpack = require('webpack');
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-var path = require('path');
-var env = require('yargs').argv.mode;
+const webpack = require('webpack');
+const path = require('path');
+const env = require('yargs').argv.mode;
 
-var plugins = [];
+const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const plugins = [];
+let outputFile;
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }));
@@ -12,8 +13,8 @@ if (env === 'build') {
   outputFile = 'stylesheet-inject.js';
 }
 
-var config = {
-  entry: path.join(__dirname, 'index.js'),
+const config = {
+  entry: path.join(__dirname, 'src', 'index.js'),
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, 'dist'),
@@ -26,6 +27,10 @@ var config = {
     loaders: [{
       test: /\.js$/,
       loader: 'babel',
+      exclude: /node_modules/,
+    }, {
+      test: /\.js$/,
+      loader: 'eslint-loader',
       exclude: /node_modules/,
     }],
   },
