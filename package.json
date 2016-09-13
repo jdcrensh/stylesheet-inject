@@ -2,7 +2,7 @@
   "name": "stylesheet-inject",
   "version": "1.2.0",
   "description": "Dynamically load CSS snippets and stylesheets at browser runtime",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack && webpack --mode=build",
     "test": "echo \"Error: no test specified\" && exit 1"
