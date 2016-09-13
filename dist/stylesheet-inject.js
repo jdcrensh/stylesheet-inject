@@ -55,21 +55,21 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-
+	
 	var _inject = __webpack_require__(1);
-
+	
 	var _inject2 = _interopRequireDefault(_inject);
-
+	
 	var _load = __webpack_require__(2);
-
+	
 	var _load2 = _interopRequireDefault(_load);
-
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+	
 	exports.default = { load: _load2.default, inject: _inject2.default };
 	module.exports = exports['default'];
 
@@ -78,18 +78,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-
+	
 	exports.default = function (styles) {
 	  var $div = document.createElement('div');
 	  $div.innerHTML = '<p>foo</p><style>' + styles + '</style>';
 	  var $head = document.getElementsByTagName('head')[0];
 	  $head.appendChild($div.childNodes[1]);
 	};
-
+	
 	module.exports = exports['default'];
 
 /***/ },
@@ -97,11 +97,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	'use strict';
-
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-
+	
 	exports.default = function (url, callback) {
 	  var $link = createLinkElement(url);
 	  var $head = document.getElementsByTagName('head')[0];
@@ -114,7 +114,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	  $img.src = url;
 	};
-
+	
 	var createLinkElement = function createLinkElement(url) {
 	  var $link = document.createElement('link');
 	  $link.type = 'text/css';
@@ -122,7 +122,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  $link.href = url;
 	  return $link;
 	};
-
+	
 	module.exports = exports['default'];
 
 /***/ }
