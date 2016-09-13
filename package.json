@@ -1,6 +1,6 @@
 {
   "name": "stylesheet-inject",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Dynamically load CSS snippets and stylesheets at browser runtime",
   "main": "src/index.js",
   "scripts": {
